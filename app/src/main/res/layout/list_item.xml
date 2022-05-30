@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--This layout file is used to define how each item is displayed-->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<!--schema declaration must be on the top level item-->
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_margin="8dp">
 
-<!-- Now there are two elements-->
-
-    <ImageView
-        android:id="@+id/item_image"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="190dp"
-        android:importantForAccessibility="no"/>
-    <TextView
-        android:id="@+id/item_title"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="32sp"
-        />
+        android:orientation="vertical">
 
-</LinearLayout>
+    <!-- Now there are two elements-->
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:importantForAccessibility="no"/>
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            />
 
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
